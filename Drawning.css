@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#paintArea {
+    position: relative;
+    border: 5px #4B0082 solid;
+    height: 70vh;
+    width: 100%;
+    background: conic-gradient(
+    #03045E,
+    #023E8A,
+    #0077B6,
+    #0096C7,
+    #00B4D8,
+    #48CAE4,
+    #90E0EF,
+    #ADE8F4,
+    #CAF0F8,
+    #ADE8F4,
+    #90E0EF,
+    #48CAE4,
+    #00B4D8,
+    #0096C7,
+    #0077B6,
+    #023E8A,
+    #03045E
+);
+
+}
+
+.options {
+    height: 30v;
+    background: repeating-conic-gradient(
+            #8A2BE2,
+            #4B0082,
+            #7777ff,
+            #00a2ffef,
+            #0062b3,
+            #9400D3,
+            #8A2BE2
+        );
+    padding: 30px;
+}
+
+.tools-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tools-row h5{
+margin-bottom: 20px;
+color: #ffffff;
+font-weight: 400;
+font-size: 25px;
+letter-spacing: 0.2px;
+}
+
+.tools-row button{
+    padding: 20px 40px;
+    border-radius: 80px;
+    border: none;
+    background-color: #ffffff00;
+    font-size:32px;
+    color: #ffffff;
+}
+
+.tools-row button:hover{
+    background-color: #ffffff50;
+    transition: 0.3s;
+}
+
+.tools-row button:active{
+    top: 5px;
+    position: relative;
+}
+
+input[type="range"] {
+    height: 40px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 8px;
+    border: 3px solid#000000;
+}
+
+input[type="color"]::moz-color-swatch {
+    border-radius: 8px;
+    border: 3px solid #000000;
+  }
+
+
+
